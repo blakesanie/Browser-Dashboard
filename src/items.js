@@ -77,4 +77,26 @@ exports.items = [
     image:
       "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Gmail_icon_%282020%29.svg/512px-Gmail_icon_%282020%29.svg.png",
   },
+  {
+    title: "YouTube",
+    url: "https://youtube.com",
+    image: "https://www.iconpacks.net/icons/1/free-youtube-icon-123-thumb.png",
+  },
+  {
+    title: "Sheets",
+    url: "https://sheets.google.com",
+    image:
+      "https://icons-for-free.com/iconfiles/png/512/brands+google+logo+logos+sheets+icon-1320184760935401190.png",
+  },
+  {
+    title: "Netflix",
+    url: "https://netflix.com",
+    image: "https://image.flaticon.com/icons/png/512/870/870910.png",
+  },
+  {
+    title: "TradingView",
+    url: "https://tradingview.com",
+    image:
+      "https://user-images.githubusercontent.com/5462382/34194692-9a517de4-e51f-11e7-8af9-46f9ea4cf555.png",
+  },
 ];

@@ -16,6 +16,7 @@
     "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build && react-snapshot",
+    "buildLocal": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -37,6 +38,7 @@
       "last 1 safari version"
     ]
   },
+  "homepage": "https://blakesanie.github.io/Browser-Dashboard",
   "reactSnapshot": {
     "include": [
       "/"

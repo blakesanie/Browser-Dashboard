@@ -50,7 +50,7 @@ html {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-image: url("https://4kwallpapers.com/images/wallpapers/macos-big-sur-apple-layers-fluidic-colorful-dark-wwdc-2020-5120x2880-1432.jpg");
+  background-image: url("https://4kwallpapers.com/images/walls/thumbs_2t/1432.jpg");
   background-position: center;
   background-size: cover;
   filter: blur(5px);
@@ -102,7 +102,7 @@ h2 {
 .item {
   padding: 20px 40px;
   background-color: rgba(255, 255, 255, 0.1);
-  border-radius: 20px;
+  border-radius: 16px;
   margin: 20px;
   border: 1px solid rgba(255, 255, 255, 0.2);
   backdrop-filter: blur(20px);

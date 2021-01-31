@@ -96,7 +96,7 @@ function App() {
           <div className="itemHolder">
             {items.map((item) => {
               return (
-                <a className="item" href={item.url}>
+                <a className="item" href={item.url} key={item.title}>
                   <img src={item.image} />
                   <p className="itemTitle">{item.title}</p>
                 </a>

@@ -87,8 +87,8 @@ function App() {
         <Bubble />
         <Bubble />
         <Bubble />
+        <TapeWidget />
         <div className="foreground">
-          <TapeWidget />
           <div className="date">
             <h1>{currentTime}</h1>
             <h2>{currentDate}</h2>

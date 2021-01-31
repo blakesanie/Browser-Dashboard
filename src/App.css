@@ -27,13 +27,11 @@ html {
 }
 
 .foreground {
-  position: absolute;
-  max-height: 100%;
-  width: 100%;
-  overflow: scroll;
   display: flex;
   flex-direction: column;
   align-items: center;
+  overflow: scroll;
+  z-index: 999;
 }
 
 .bgHolder {
@@ -196,6 +194,7 @@ h2 {
 }
 
 .tape.tradingview-widget-container {
+  z-index: 9999;
 }
 
 .trading.tradingview-widget-container,

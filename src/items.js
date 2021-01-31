@@ -22,7 +22,7 @@ exports.items = [
       "https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/211_Medium_logo_logos-512.png",
   },
   {
-    title: "Finance",
+    title: "Yahoo Finance",
     url: "https://finance.yahoo.com",
     image:
       "https://uxwing.com/wp-content/themes/uxwing/download/10-brands-and-social-media/yahoo.png",
@@ -50,13 +50,13 @@ exports.items = [
     image: "https://assets.stickpng.com/images/584abf102912007028bd9332.png",
   },
   {
-    title: "Drive",
+    title: "Google Drive",
     url: "https://drive.google.com",
     image:
       "https://ssl.gstatic.com/images/branding/product/2x/hh_drive_96dp.png",
   },
   {
-    title: "Docs",
+    title: "Google Docs",
     url: "https://docs.google.com",
     image: "https://img.icons8.com/ios/452/google-docs.png",
   },
@@ -83,7 +83,7 @@ exports.items = [
     image: "https://www.iconpacks.net/icons/1/free-youtube-icon-123-thumb.png",
   },
   {
-    title: "Sheets",
+    title: "Google Sheets",
     url: "https://sheets.google.com",
     image:
       "https://icons-for-free.com/iconfiles/png/512/brands+google+logo+logos+sheets+icon-1320184760935401190.png",
@@ -98,5 +98,27 @@ exports.items = [
     url: "https://tradingview.com",
     image:
       "https://user-images.githubusercontent.com/5462382/34194692-9a517de4-e51f-11e7-8af9-46f9ea4cf555.png",
+  },
+  {
+    title: "Dribbble",
+    url: "https://dribbble.com",
+    image: "https://image.flaticon.com/icons/png/512/87/87400.png",
+  },
+  {
+    title: "Stripe",
+    url: "https://stripe.com",
+    image:
+      "https://symbols.getvecta.com/stencil_96/113_stripe-icon.9b88e82624.png",
+  },
+  {
+    title: "Buzzport",
+    url: "https://buzzport.gatech.edu/",
+    image:
+      "https://sustainability.ncsu.edu/multisite/wp-content/uploads/2019/02/Georgia-Tech-Logo-400x300.png",
+  },
+  {
+    title: "Heroku",
+    url: "https://www.heroku.com",
+    image: "https://img.icons8.com/ios/452/heroku.png",
   },
 ];

@@ -70,7 +70,7 @@ h1 {
 
 h2 {
   color: white;
-  font-size: 30px;
+  font-size: 22px;
 }
 
 .search {
@@ -144,6 +144,35 @@ h2 {
   opacity: 0.7;
 }
 
+.braveLinks {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.braveLinks a {
+  font-size: 16px;
+  padding: 12px 20px;
+  margin: 0 10px;
+  color: white;
+}
+
+.byline {
+  color: white;
+  font-size: 14px;
+  margin-bottom: 50px;
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+}
+
+.byline img {
+  height: 16px;
+  filter: invert(100%);
+  margin-left: 6px;
+}
+
 @keyframes bounce {
   0% {
     transform: scale(1);
@@ -157,4 +186,20 @@ h2 {
   100% {
     transform: scale(1);
   }
+}
+
+.trading.tradingview-widget-container {
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(20px);
+  border-radius: 16px;
+  margin-top: 40px;
+}
+
+.tape.tradingview-widget-container {
+}
+
+.trading.tradingview-widget-container,
+.trading.tradingview-widget-container iframe {
+  max-width: min(calc(100vw - 100px), 1000px);
+  min-height: 700px;
 }

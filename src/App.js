@@ -2,11 +2,17 @@ import { useState, useEffect, useRef } from "react";
 import logo from "./logo.svg";
 import "./App.css";
 import Bubble from "./Bubble.js";
+import TradingWidget from "./TradingWidget.js";
+import TapeWidget from "./TapeWidget.js";
 import { items } from "./items.js";
+
+const braveLinks = ["settings", "rewards", "history", "bookmarks", "downloads"];
 
 function App() {
   const [currentTime, setCurrentTime] = useState(null);
   const [currentDate, setCurrentDate] = useState(null);
+
+  const [query, setQuery] = useState("");
 
   const textInput = useRef();
 
@@ -26,7 +32,7 @@ function App() {
     const timer = setInterval(() => {
       const now = new Date();
       let hours = now.getHours();
-      let period = hours > 12 ? "pm" : "am";
+      let period = hours >= 12 ? "pm" : "am";
       hours = hours % 12;
       if (hours == 0) {
         hours = 12;
@@ -82,6 +88,7 @@ function App() {
         <Bubble />
         <Bubble />
         <div className="foreground">
+          <TapeWidget />
           <div className="date">
             <h1>{currentTime}</h1>
             <h2>{currentDate}</h2>
@@ -91,18 +98,47 @@ function App() {
             placeholder="Search Google"
             className="search"
             ref={textInput}
-            autofocus
+            onChange={(event) => {
+              setQuery(event.target.value);
+            }}
           ></input>
           <div className="itemHolder">
-            {items.map((item) => {
+            {items
+              .filter((item) => {
+                return (
+                  query.length == 0 ||
+                  item.title.toLowerCase().includes(query.toLowerCase())
+                );
+              })
+              .map((item) => {
+                return (
+                  <a className="item" href={item.url} key={item.title}>
+                    <img src={item.image} />
+                    <p className="itemTitle">{item.title}</p>
+                  </a>
+                );
+              })}
+          </div>
+          {/* <div className="braveLinks">
+            {braveLinks.map((braveLink) => {
               return (
-                <a className="item" href={item.url} key={item.title}>
-                  <img src={item.image} />
-                  <p className="itemTitle">{item.title}</p>
+                <a
+                  // href={`brave://${braveLink}`}
+                  className="item"
+                  onClick={() => {
+                    window.location.replace(`brave://${braveLink}`);
+                  }}
+                >
+                  {braveLink.charAt(0).toUpperCase() + braveLink.slice(1)}
                 </a>
               );
             })}
-          </div>
+          </div> */}
+          <TradingWidget />
+          <p className="byline">
+            Made by Blake Sanie with{" "}
+            <img src="https://cdn2.iconfinder.com/data/icons/pittogrammi/142/80-512.png" />
+          </p>
         </div>
       </div>
     </>

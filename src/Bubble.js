@@ -3,8 +3,8 @@ import "./App.css";
 
 export default function Bubble() {
   const [size, setSize] = useState(50 + Math.random() * 200);
-  const [x, setX] = useState(0);
-  const [y, setY] = useState(0);
+  const [x, setX] = useState(-size);
+  const [y, setY] = useState(-size);
 
   const [transitionTime, setTransitionTime] = useState(0);
 

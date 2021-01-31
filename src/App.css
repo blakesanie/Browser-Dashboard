@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Rubik", sans-serif;
+  font-weight: 300;
+}
+
+.foreground {
+  position: absolute;
+  max-height: 100%;
+  width: 100%;
+  overflow: scroll;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+html {
+  background-color: black;
+}
+
+.App {
+  background-color: black;
+  max-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  overflow: hidden;
+}
+
+.bgHolder {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.bg {
+  position: absolute;
+  height: calc(100% + 100px);
+  width: calc(100% + 100px);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-image: url("https://4kwallpapers.com/images/wallpapers/macos-big-sur-apple-layers-fluidic-colorful-dark-wwdc-2020-5120x2880-1432.jpg");
+  background-position: center;
+  background-size: cover;
+  filter: blur(5px);
+}
+
+.date {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 80px;
+}
+
+h1 {
+  color: white;
+  font-size: 60px;
+}
+
+h2 {
+  color: white;
+  font-size: 30px;
+}
+
+.search {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  width: calc(100vw - 100px);
+  max-width: 500px;
+  padding: 14px 30px;
+  font-size: 16px;
+  border-radius: 1000px;
+  backdrop-filter: blur(20px);
+  margin-top: 80px;
+  color: white;
+  outline: none;
+}
+
+.search::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.itemHolder {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.item {
+  padding: 20px 40px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  margin: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(20px);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  mix-blend-mode: lighten;
+}
+
+.item:hover {
+  animation: bounce 0.3s ease-in-out;
+}
+
+.itemTitle {
+  font-size: 20px;
+  color: white;
+}
+
+.item img {
+  mix-blend-mode: multiply;
+  margin-right: 24px;
+  height: 20px;
+  filter: brightness(0) saturate(0) invert(100%);
+}
+
+.bubble {
+  position: absolute;
+  border-radius: 50%;
+  background: linear-gradient(45deg, rgb(255, 78, 78), rgb(133, 206, 255));
+  mix-blend-mode: lighten;
+  opacity: 0.95;
+}
+
+@keyframes bounce {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  90% {
+    transform: scale(0.95);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

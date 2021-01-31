@@ -134,7 +134,7 @@ function App() {
               );
             })}
           </div> */}
-          <TradingWidget />
+          {/* <TradingWidget /> */}
           <p className="byline">
             Made by Blake Sanie with{" "}
             <img src="https://cdn2.iconfinder.com/data/icons/pittogrammi/142/80-512.png" />
